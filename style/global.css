@@ -1,0 +1,67 @@
+/*
+#274075
+#FD5D5D
+#FFF7BC
+#F3E9DD
+#B7CADB
+*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;600;700&display=swap');
+:root {
+    --color-primary: #F3E9DD;
+    --color-secondary: #274075;
+    --color-third: #FFF7BC;
+    --color-4th: #FD5D5D;
+    --color-5th: #B7CADB;
+}
+body {
+    font-family: 'Red Hat Mono', monospace;
+}
+h1{
+    font-size: 2.5rem;
+}
+*{
+    margin: 0;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Red Hat Mono', monospace;
+}
+.bck-primary{
+    background-color: #e5e5e5;
+}
+.bck-secondary{
+    background-color: #14213d;
+}
+.bck-third{
+    background-color: #fca311;
+}
+.bck-white{
+    background-color: #ffffff;
+}
+.bck-black{
+    background-color: #000000;
+}
+.color-primary{
+    background-color: #e5e5e5;
+}
+.color-secondary{
+    background-color: #14213d;
+}
+.color-third{
+    background-color: #fca311;
+}
+.color-white{
+    background-color: #ffffff;
+}
+.color-black{
+    background-color: #000000;
+}
+

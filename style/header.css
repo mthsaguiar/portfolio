@@ -1,0 +1,109 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-primary);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    max-width: 400px;
+    background-color: var(--color-secondary);
+    padding-top: 36px;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    transform: translateX(-100%);
+}
+header .active ul{
+    overflow-x: visible;
+    transform: translateX(0);
+}
+header li{
+    text-align: left;
+    margin: 12px 0 0 36px;
+}
+header li a{
+    font-size: 32px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+    color: var(--color-primary)
+}
+#menu-icon{
+    display: block;
+    margin-left: 5px;
+    width: 20px;
+    border-top: 3px solid var(--color-secondary);
+}
+#menu-icon::before,
+#menu-icon::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: var(--color-secondary);
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.active #menu-icon{
+    border-top-color: transparent;
+}
+.active #menu-icon::before{
+    transform: rotate(135deg);
+}
+.active #menu-icon::after{
+    transform: rotate(-135deg);
+    top: -8px;
+}
+#logo{
+    height: 48px;
+}
+#logo svg{
+    height: 100%;
+    width: auto;
+}
+header{
+    padding: 16px;
+}
+@media screen and (min-width: 769px) {
+    #close-open-btn{
+        display: none;
+    }
+    header{
+        padding: 24px;
+    }
+    header ul{
+        overflow: auto;
+        transform: translateX(0);
+        background-color: transparent;
+        position: relative;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        padding-top: 0;
+    }
+    header li{
+        margin: 0;
+        width: 12vw;
+        text-align: right;
+    }
+    header li a{
+        color: var(--color-secondary);
+        font-size: 24px;
+    }
+    header li a:hover{
+        color: var(--color-4th);
+    }
+}
